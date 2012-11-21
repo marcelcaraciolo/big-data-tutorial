@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Applied Machine Learning in Python with scikit-learn &mdash; scikit-learn tutorial v0.9 documentation</title>
+    <link rel="stylesheet" href="static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="top" title="scikit-learn tutorial v0.9 documentation" href="#" />
+    <link rel="next" title="1. Tutorial setup" href="setup.html" /> 
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+          <p class="logo"><a href="#">
+            <img src="static/scikit-learn-logo-small.png" alt="Logo"/>
+          </a>
+          </p><div class="navbar">
+          <ul>
+            <li><a href="http://github.com/scikit-learn/scikit-learn-tutorial">Source of this tutorial</a></li>
+            <li><a href="http://scikit-learn.sourceforge.net">Documentation for scikit-learn</a></li>
+       </ul>
+
+
+       </div> <!-- end navbar --></div>
+    </div>
+
+    <div class="content-wrapper">
+
+    <!-- <div id="blue_tile"></div> -->
+
+        <div class="sphinxsidebar">
+        <h3>News</h3>
+
+       <p>scikits.learn 0.7 is available
+         for <a href="https://sourceforge.net/projects/scikit-learn/files/">download</a>.
+         See <a href="whats_new.html">what's new</a> and tips
+         on <a href="install.html">installing</a>.</p>
+
+
+        
+
+        <h3>Contents</h3>
+         <ul>
+</ul>
+
+
+      </div>
+
+      <div class="content">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="topic">
+<p class="topic-title first">Applied machine learning in Python with scikit-learn</p>
+<p><tt class="docutils literal"><span class="pre">scikits.learn</span></tt> is a Python module integrating classic machine
+learning algorithms in the tightly-knit world of scientific Python
+packages (<a class="reference external" href="http://www.scipy.org">numpy</a>, <a class="reference external" href="http://www.scipy.org">scipy</a>, <a class="reference external" href="http://matplotlib.sourceforge.net/">matplotlib</a>).</p>
+<p>It aims to provide simple and efficient solutions to learning
+problems that are accessible to everybody and reusable in various
+contexts: <strong>machine-learning as a versatile tool for science and
+engineering</strong>.</p>
+</div>
+<style type="text/css">
+  div.bodywrapper blockquote {
+      margin: 0 ;
+  }
+
+  div.toctree-wrapper ul {
+      margin-top: 0 ;
+      margin-bottom: 0 ;
+      padding-left: 10px ;
+  }
+
+  li.toctree-l1 {
+      padding: 0 0 0.5em 0 ;
+      list-style-type: none;
+      font-size: 150% ;
+      font-weight: bold;
+      }
+
+  li.toctree-l1 ul {
+      padding-left: 40px ;
+  }
+
+  li.toctree-l2 {
+      font-size: 70% ;
+      list-style-type: square;
+      font-weight: normal;
+      }
+
+  li.toctree-l3 {
+      font-size: 85% ;
+      list-style-type: circle;
+      font-weight: normal;
+      }
+
+</style><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This document is meant to be used with <strong>scikit-learn version
+0.9+</strong> (i.e. the current state of the master branch at the time of
+writing: 2011-08-09).</p>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">1. Tutorial setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#install-scikit-learn-build-dependencies">1.1. Install scikit-learn build dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#build-scikit-learn-from-source">1.2. Build scikit-learn from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#download-the-datasets">1.3. Download the datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="general_concepts.html">2. Machine Learning 101</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="general_concepts.html#features-and-feature-extraction">2.1. Features and feature extraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="general_concepts.html#supervised-learning-model-fit-x-y">2.2. Supervised Learning: <tt class="docutils literal"><span class="pre">model.fit(X,</span> <span class="pre">y)</span></tt></a></li>
+<li class="toctree-l2"><a class="reference internal" href="general_concepts.html#unsupervised-learning-model-fit-x">2.3. Unsupervised Learning: <tt class="docutils literal"><span class="pre">model.fit(X)</span></tt></a></li>
+<li class="toctree-l2"><a class="reference internal" href="general_concepts.html#linearly-separable-data">2.4. Linearly separable data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="general_concepts.html#training-set-test-set-and-overfitting">2.5. Training set, test set and overfitting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="general_concepts.html#key-takeaway-points">2.6. Key takeaway points</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="working_with_text_data.html">3. Working with text data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="working_with_text_data.html#downloading-the-data-and-loading-it-from-python">3.1. Downloading the data and loading it from Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working_with_text_data.html#extracting-features-from-text-files">3.2. Extracting features from text files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working_with_text_data.html#training-a-linear-classifier">3.3. Training a linear classifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working_with_text_data.html#building-a-pipeline">3.4. Building a pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working_with_text_data.html#evaluation-of-the-performance-on-the-test-set">3.5. Evaluation of the performance on the test set</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working_with_text_data.html#parameter-tuning-using-grid-search">3.6. Parameter tuning using grid search</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exercises.html">4. Exercises</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#exercise-1-language-identification">4.1. Exercise 1: Language identification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#exercise-2-sentiment-analysis-on-movie-reviews">4.2. Exercise 2: Sentiment Analysis on movie reviews</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#exercise-3-cli-text-classification-utility">4.3. Exercise 3: CLI text classification utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#exercise-4-face-recognition">4.4. Exercise 4: Face recognition</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="which_algorithm.html">5. How to select the right algorithm for the task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding_help.html">6. Finding help</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="finding_help.html#the-project-mailing-list">6.1. The project mailing list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="finding_help.html#q-a-communities-with-machine-learning-practictioners">6.2. Q&amp;A communities with Machine Learning practictioners</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <p style="text-align: center">This tutorial is for scikit-learn
+        version 0.9<p>
+        &copy; 2010–2011, scikits.learn developers (BSD License).
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7. Design by <a href="http://webylimonada.com">Web y Limonada</a>.
+    </div>
+  </body>
+</html>

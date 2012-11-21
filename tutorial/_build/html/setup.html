@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. Tutorial setup &mdash; scikit-learn tutorial v0.9 documentation</title>
+    <link rel="stylesheet" href="static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="top" title="scikit-learn tutorial v0.9 documentation" href="index.html" />
+    <link rel="next" title="2. Machine Learning 101" href="general_concepts.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="index.html" /> 
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+          <p class="logo"><a href="index.html">
+            <img src="static/scikit-learn-logo-small.png" alt="Logo"/>
+          </a>
+          </p><div class="navbar">
+          <ul>
+            <li><a href="http://github.com/scikit-learn/scikit-learn-tutorial">Source of this tutorial</a></li>
+            <li><a href="http://scikit-learn.sourceforge.net">Documentation for scikit-learn</a></li>
+       </ul>
+
+
+       </div> <!-- end navbar --></div>
+    </div>
+
+    <div class="content-wrapper">
+
+    <!-- <div id="blue_tile"></div> -->
+
+        <div class="sphinxsidebar">
+        <div class="rel">
+          <a href="index.html" title="&lt;no title&gt;"
+             accesskey="P">previous</a> |
+          <a href="general_concepts.html" title="2. Machine Learning 101"
+             accesskey="N">next</a> |
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a>
+        </div>
+        
+
+        <h3>Contents</h3>
+         <ul>
+<li><a class="reference internal" href="#">1. Tutorial setup</a><ul>
+<li><a class="reference internal" href="#install-scikit-learn-build-dependencies">1.1. Install scikit-learn build dependencies</a></li>
+<li><a class="reference internal" href="#build-scikit-learn-from-source">1.2. Build scikit-learn from source</a></li>
+<li><a class="reference internal" href="#download-the-datasets">1.3. Download the datasets</a></li>
+</ul>
+</li>
+</ul>
+
+
+      </div>
+
+      <div class="content">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="tutorial-setup">
+<h1>1. Tutorial setup<a class="headerlink" href="#tutorial-setup" title="Permalink to this headline">¶</a></h1>
+<p>The following assumes you have extracted the source distribution
+of this tutorial somewhere on your local disk. Alternatively you
+can use git to clone this repo directly from github onto your
+local disk:</p>
+<div class="highlight-python"><pre>% git clone https://github.com/scikit-learn/scikit-learn-tutorial.git</pre>
+</div>
+<p>In the following we will name this folder <tt class="docutils literal"><span class="pre">$TUTORIAL_HOME</span></tt>. It
+should contain the following folders:</p>
+<blockquote>
+<div><ul class="simple">
+<li><tt class="docutils literal"><span class="pre">tutorial</span></tt> - the source of the tutorial document written with sphinx</li>
+<li><tt class="docutils literal"><span class="pre">data</span></tt> - folder to put the datasets used during the tutorial</li>
+<li><tt class="docutils literal"><span class="pre">skeletons</span></tt> - sample incomplete scripts for the exercices</li>
+<li><tt class="docutils literal"><span class="pre">solutions</span></tt> - solutions of the exercices</li>
+</ul>
+</div></blockquote>
+<p>You can aleardy copy the skeletons into a new folder named <tt class="docutils literal"><span class="pre">workspace</span></tt>
+where you will edit your own files for the exercices while keeping
+the original skeletons intact:</p>
+<div class="highlight-python"><pre>% cp -r skeletons workspace</pre>
+</div>
+<div class="section" id="install-scikit-learn-build-dependencies">
+<h2>1.1. Install scikit-learn build dependencies<a class="headerlink" href="#install-scikit-learn-build-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Please refer to the <a class="reference external" href="http://scikit-learn.sourceforge.net/install.html">scikit-learn install</a> page for per-system
+instructions.</p>
+<p>You must have <tt class="docutils literal"><span class="pre">numpy</span></tt>, <tt class="docutils literal"><span class="pre">scipy</span></tt>, <tt class="docutils literal"><span class="pre">matplotlib</span></tt> and <tt class="docutils literal"><span class="pre">ipython</span></tt>
+installed:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Under <strong>Debian or Ubuntu Linux</strong> you should use:</p>
+<div class="highlight-python"><pre>% sudo apt-get install build-essential python-dev python-numpy \
+  python-numpy-dev python-scipy libatlas-dev g++ python-matplotlib \
+  ipython</pre>
+</div>
+</li>
+<li><p class="first">Under <strong>MacOSX</strong> you should probably use a scientific python distribution
+such as <a class="reference external" href="http://stronginference.com/scipy-superpack/">Scipy Superpack</a></p>
+</li>
+<li><p class="first">Under <strong>Windows</strong> the <a class="reference external" href="http://www.pythonxy.com/">Python(x,y)</a> is probably your best bet to get a
+working numpy / scipy environment up and running.</p>
+</li>
+</ul>
+</div></blockquote>
+<p>Alternatively under Windows and MaxOSX you can use the <a class="reference external" href="https://www.enthought.com/products/epd.php">EPD</a> (Enthought
+Python Distribution) which is a (non-open source) packaging of the
+scientific python stack.</p>
+</div>
+<div class="section" id="build-scikit-learn-from-source">
+<h2>1.2. Build scikit-learn from source<a class="headerlink" href="#build-scikit-learn-from-source" title="Permalink to this headline">¶</a></h2>
+<p>Here are the instructions to install the current master from source
+on a POSIX system (e.g. Linux and MacOSX). <strong>In the folder next to
+$TUTORIAL_HOME</strong> do:</p>
+<div class="highlight-python"><pre>% git clone https://github.com/scikit-learn/scikit-learn.git
+% cd scikit-learn</pre>
+</div>
+<p>You can then build it locally and add it to your PYTHONPATH environment
+variable:</p>
+<div class="highlight-python"><pre>% python setup.py build_ext -i
+% export PYTHONPATH=`pwd`</pre>
+</div>
+<p>Alternatively you can install the library globally:</p>
+<div class="highlight-python"><pre>% python setup.py build
+% sudo python setup.py install</pre>
+</div>
+<p>You should also be able to launch the tests from anywhere in the system
+(if nose is installed) with the following:</p>
+<div class="highlight-python"><pre>% nosetests scikits/learn</pre>
+</div>
+<p>The output should end with <tt class="docutils literal"><span class="pre">OK</span></tt> as in:</p>
+<div class="highlight-python"><pre>----------------------------------------------------------------------
+Ran 589 tests in 36.876s
+
+OK (SKIP=2)</pre>
+</div>
+<p>If this is not the case please send a mail to the <a class="reference external" href="https://lists.sourceforge.net/lists/listinfo/scikit-learn-general">scikit-learn mailing list</a>
+including the error messages along with the version number of all the afore
+mentioned dependencies and your operating system.</p>
+<p>In the rest of the tutorial, the path to the <tt class="docutils literal"><span class="pre">scikit-learn</span></tt> source
+folder will be named <tt class="docutils literal"><span class="pre">$SKL_HOME</span></tt>.</p>
+<p>As usual building from source under Windows is slightly more complicated.
+Checkout the <a class="reference external" href="http://scikit-learn.sourceforge.net/dev/install.html#building-on-windows">build instructions</a> on the scikit-learn website.</p>
+</div>
+<div class="section" id="download-the-datasets">
+<h2>1.3. Download the datasets<a class="headerlink" href="#download-the-datasets" title="Permalink to this headline">¶</a></h2>
+<p>Machine Learning algorithms need data. Go to each <tt class="docutils literal"><span class="pre">$TUTORIAL_HOME/data</span></tt>
+sub-folder and run the <tt class="docutils literal"><span class="pre">fetch_data.py</span></tt> script from there (after
+having read them first).</p>
+<p>For instance:</p>
+<div class="highlight-python"><pre>% cd $TUTORIAL_HOME/data/languages
+% less fetch_data.py
+% python fetch_data.py</pre>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <p style="text-align: center">This tutorial is for scikit-learn
+        version 0.9<p>
+        &copy; 2010–2011, scikits.learn developers (BSD License).
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7. Design by <a href="http://webylimonada.com">Web y Limonada</a>.
+    </div>
+  </body>
+</html>
