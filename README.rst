@@ -29,9 +29,9 @@ Use the following links:
 
 * [0-Introduction-to-Pandas](http://nbviewer.ipython.org/urls/raw.github.com/marcelcaraciolo/big-data-tutorial/master/tutorial/0-Introduction-to-Pandas.ipynb)
 
-* [1-Introduction-to-Scikit-Learn](http://nbviewer.ipython.org/urls/raw.github.com/marcelcaraciolo/big-data-tutorial/master/tutorial/1-Introduction-to-Scikit-Learn.ipynb)
+* [1-Playing-with-recommender-systems](http://nbviewer.ipython.org/urls/raw.github.com/marcelcaraciolo/big-data-tutorial/master/tutorial/1-Playing-with-Recommender-Systems.ipynb)
 
-* [2-Playing-with-recommender-systems](http://nbviewer.ipython.org/urls/raw.github.com/marcelcaraciolo/big-data-tutorial/master/tutorial/2-Playing-with-Recommender-Systems.ipynb)
+* [2-Introduction-to-Scikit-Learn](http://nbviewer.ipython.org/urls/raw.github.com/marcelcaraciolo/big-data-tutorial/master/tutorial/2-Introduction-to-Scikit-Learn.ipynb)
 
 * [3-Map-Reduce](http://nbviewer.ipython.org/urls/raw.github.com/marcelcaraciolo/big-data-tutorial/master/tutorial/3-Map-Reduce.ipynb)
 
