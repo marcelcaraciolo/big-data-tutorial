@@ -35,10 +35,6 @@ Use the following links:
 
 * [3-Map-Reduce](http://nbviewer.ipython.org/urls/raw.github.com/marcelcaraciolo/big-data-tutorial/master/tutorial/3-Map-Reduce.ipynb)
 
-* [4-MapReduce, MrJob and Recommenders](http://nbviewer.ipython.org/urls/raw.github.com/marcelcaraciolo/big-data-tutorial/master/tutorial/4-MapReduce%2Cmrjob-and-recommenders.ipynb)
-
-* [5- PyTables, Hadoop, HDFS Advanced](http://nbviewer.ipython.org/urls/raw.github.com/marcelcaraciolo/big-data-tutorial/master/tutorial/5-PyTables%2CHDFS%2CHadoop-ADVANCED.ipynb)
-
 
 
 License
