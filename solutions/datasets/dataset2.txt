@@ -1,0 +1,11 @@
+marcel,jonas,maria,jose,amanda
+maria,carol,fabiola,amanda
+amanda,paula,patricia,marcel
+carol,maria,jose
+fabiola,maria
+paula,fabio,amanda
+patricia,amanda,carol
+jose,carol
+jonas,marcel,fabio
+fabio,jonas
+carla
